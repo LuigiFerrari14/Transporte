@@ -1,0 +1,19 @@
+
+
+
+ADICIONAR NO BANCO DE DADOS
+
+
+create view total_viagens AS
+
+SELECT start as data_marcada, Motorista AS mot1 
+FROM usuario
+
+
+Union All
+
+SELECT start as data_marcada, Motorista2 as mot2
+FROM usuario
+
+
+
